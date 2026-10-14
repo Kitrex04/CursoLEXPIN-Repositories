@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .cuadro {
+        background-color: rgb(118, 1, 1);
+        width: 100px;
+        height: 100px;
+        position: relative;
+        animation: cambiarFondo 10s infinite;
+      }
+      .animaciontexto p {
+        font-size: 14px;
+        font-weight: 400;
+        animation: animarTexto 7s infinite;
+      }
+
+      @keyframes animarTexto {
+        0% {
+          font-size: 14px;
+          font-weight: 400;
+          font-color: rgb(255, 255, 255);
+        }
+        50% {
+          font-size: 24px;
+          font-weight: 700;
+          font-color: rgb(165, 44, 172);
+        }
+        100% {
+          font-size: 14px;
+          font-weight: 900;
+          font-color: rgb(251, 0, 29);
+        }
+      }
+
+      @keyframes cambiarFondo {
+        0% {
+          background-color: rgb(118, 1, 1);
+          top: 0;
+          left: 0;
+        }
+        25% {
+          background-color: cadetblue;
+          top: 50px;
+          left: 0;
+        }
+        50% {
+          background-color: rgb(88, 129, 13);
+          top: 50px;
+          left: 50px;
+        }
+        75% {
+          background-color: rgb(75, 38, 155);
+          top: 0;
+          left: 50px;
+        }
+        100% {
+          background-color: rgb(118, 1, 1);
+          top: 0;
+          left: 0;
+        }
+        /*
+          Haz una animacion sobre un parrafo que
+          - Dure 7 segundos
+          - El texto cambie su tamaño y grosor de uno pequeño a una mas grande
+          - la animacion se debe de repetir infinitamente
+        */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cuadro"></div>
+
+
+    <div class="animaciontexto">
+    <p>Este es un párrafo con animación.</p>
+    </div>
+
+    
+  </body>
+</html>

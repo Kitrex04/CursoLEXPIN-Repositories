@@ -1,0 +1,15 @@
+/*Estilos para h1*/
+.h1 {
+  font-size: 64px;
+  font-family: Arial;
+  color: blue;
+  background-color: red;
+}
+
+/*Estilos para botones*/
+button {
+  border: 5px solid rgb(253, 162, 4);
+  background-color: blue;
+  color: white;
+  font-size: 24px;
+}

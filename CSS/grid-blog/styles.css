@@ -1,0 +1,23 @@
+header {
+    text-align: center;
+    padding: 0px 0px 80px 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 20px;
+}
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.grid-item img,
+.grid-item-largo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+ 

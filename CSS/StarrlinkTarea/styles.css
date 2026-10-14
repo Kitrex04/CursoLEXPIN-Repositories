@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*
+  ======VARIABLES======
+*/
+:root {
+  /*
+    Las variables son peque;os contenedores de informacion que puedes utilizar
+    para reutilizar un estilo declarandolo una sola vez y utilizar ese estilo por toda
+    la pagina
+  */
+  --text-color-main: white;
+  --size-titles: 64px;
+  --size-subtitles: 24px;
+  --size-highlights-paragraphs: 19px;
+  --size-paragraphs: 14px;
+  --gap-standard: 12px;
+  --padding-standard: 32px;
+  --color-button: #40444f60;
+}
+
+/*
+  ======GENERALES======
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color-main);
+}
+
+body {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+/*
+  ======REUTILIZABLES======
+*/
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-main-center {
+  justify-content: center;
+}
+
+.flex-main-space-between {
+  justify-content: space-between;
+}
+
+.flex-secondary-center {
+  align-items: center;
+}
+
+.gap-standard {
+  gap: var(--gap-standard);
+}
+
+.padding-standard {
+  padding: var(--padding-standard);
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+/*
+  ======ESPECIFICOS======
+*/
+
+header {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://starlink.com/assets-new/images/landing/field/v4_night_sky.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 0 32px;
+}
+
+nav {
+  padding: 32px 0 0 0;
+}
+
+.circular-button {
+  border-radius: 100%;
+  padding: 10px;
+  background-color: var(--color-button);
+}
+
+.button-inactive {
+  padding: 2px 8px;
+}
+
+.button-active {
+  padding: 2px 6px;
+  background-color: rgba(199, 199, 199, 0.753);
+  border-radius: 8px;
+}
+
+.buttons-menu {
+  background-color: rgba(128, 128, 128, 0.737);
+  padding: 2px;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.buttons-menu > button {
+  padding: 8px 16px;
+  font-weight: 600;
+}
+
+.link-menu {
+  font-size: var(--size-paragraphs);
+  font-weight: 600;
+}
+
+.col-content {
+  display: flex;
+}
+
+.button-hightlight{
+  background-color: white;
+  color: black;
+}
+
+.button-nohightlight{
+  background-color: rgb(67, 67, 67);
+  color: white;
+}
+
+#logo {
+  letter-spacing: 4px;
+  font-size: 16px;
+  margin-right: 16px;
+}
+
+#header-content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100%;
+}
+
+#column-content {
+  gap: 16px;
+  padding: 0 0 120px 120px;
+}
+
+#column-content > h1 {
+  font-size: var(--size-titles);
+  font-weight: 800;
+}
+
+#column-content > p {
+  font-size: var(--size-paragraphs);
+  color: rgb(145, 145, 145);
+  font-weight: 600;
+}
+
+#column-content > h2 {
+  font-size: var(--size-titles);
+  font-weight: 600;
+}
+
+#column-content > h2 > span {
+  font-size: var(--size-highlights-paragraphs);
+  color: rgb(145, 145, 145);
+}
+
+#column-content > div{
+  display: flex;
+  gap: 16px;
+}
+
+#column-content > div > button{
+  padding: 8px 32px;
+  font-size: var(--size-paragraphs);
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 170px 32px 112px;
+  gap: 15px ;
+  background-color: #000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.897)),
+  url(https://starlink.com/assets-new/images/landing/illustrations/illustration_07.webp);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.box {
+  width: 500px;
+  height: 290px;
+  background-color: #121212;
+  border-radius: 20px;
+  text-align: justify;
+  padding: 30px;
+  display:flex;
+  flex-direction: column;
+}
+
+
+.box p:nth-of-type(2) {
+  margin-top: 140px; 
+  margin-bottom: 0;  
+}
+ 
+.box h2:last-child {
+  margin-top: 5px;  
+  margin-bottom: 0;
+}
+
+.principal {
+  height: 85vh;
+  padding: 95px 0 0 125px; 
+  display: grid;
+  grid-template-columns: 50% 50%;  
+  align-items: center;
+}
+
+.principal #column-content > p {
+  font-size: 18px;
+}
+
+.principal.carro {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url(https://starlink.com/assets-new/images/landing/field/v4_car_on_ice.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.principal.antena{
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url(https://starlink.com/assets-new/images/landing/field/v4_lightning.webp);
+  background-size: cover;
+  background-position: center;
+}
+.principal.señorsentado{
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url(https://starlink.com/assets-new/images/landing/field/v4_residential_yard.webp);
+  background-size: cover;
+  background-position: center;
+}
+.principal.techoverde{
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url(https://starlink.com/assets-new/images/landing/field/v4_green_roof.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.container-carrusel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 170px 32px 112px;
+  gap: 15px ;
+  background-color: #000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.897)),
+  url(https://starlink.com/assets-new/images/landing/illustrations/illustration_08.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.container-carrusel h1 {
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.carrusel {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 20px;
+  max-width: 100%;
+  scroll-behavior: smooth;
+  width: 100%;  
+}
+
+.carrusel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+}
+
+.carrusel-item img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius:20px;
+}
+
+.carrusel-item h2 {
+  font-size: 15px;
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+.principal.techoverde {
+  height: 85vh;
+  padding: 95px 180px 0 0;  
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+ 
+.principal.techoverde .header-content {
+  grid-column: 2;
+}
+
+footer {
+  background-color: black;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+ 
+footer > div {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+ 
+ 
+footer > div:last-child {
+  align-items: center;
+  padding-top: 10px;
+}
+ 
+footer p {
+  color: white;
+  font-size: 14px;
+}
+
+.x-logo {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+
